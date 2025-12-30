@@ -1,6 +1,7 @@
 # my--experiments-1
 ## Experiment 1a: Default Primitive Type
 ### java Code:
+```
 java
 class DefaultPrimitiveType {
     byte primbyte;
@@ -23,8 +24,9 @@ class DefaultPrimitiveType {
         System.out.println("default value of boolean:" + dDpt.primboolean);
     }
 }
+```
 ##output:
-![output]()
+![output](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/e94ea853117b63b2bc630a50049b97d5a3d98d43/1a.0utput.png)
 
 ### 1b.QUADRATIC EQUQTION SOLUTION:
 ### java code
