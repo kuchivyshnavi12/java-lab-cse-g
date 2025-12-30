@@ -30,7 +30,7 @@ class DefaultPrimitiveType {
 
 ### 1b.QUADRATIC EQUQTION SOLUTION:
 ### java code
-java
+```
 import java.util.Scanner;
 class QuadraticEquationSolution {
     public static void main(String args[]) {
@@ -64,5 +64,6 @@ class QuadraticEquationSolution {
         sc.close();
     }
 }
-##output:
-![output]()
+```
+##OUTPUT:
+![output](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/ed71c6071b6ec94e320cc9d29dbe5e655e86c777/Screenshot%202025-12-30%20170135.png)
