@@ -93,3 +93,27 @@ class QuadraticEquationSolution {
 ```
 ## output:
 ![output for rectangle](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/a49ace221df2460a2b1eba765c178510b422f85f/2a.output.png)
+## title: 2b) method overloading
+```
+  class sum {
+     int sum(int a,int b) {
+     return a+b;
+     }
+     int sum(int a,int b,int c) {
+     return a+b+c;
+     }
+     double sum(double a,double b) {
+     return a+b;
+     }
+   }
+  class main {
+     public static void main(String args[]) {
+      sum S = new sum();
+ System.out.println("sum of 2 integers:"+S.sum(30,40));
+ System.out.println("sum of 3 integers:"+S.sum(39,56,78));
+ System.out.println("summ of real numbers:"+S.sum(20-456,22-564));
+ }
+}
+```
+## output:
+![output for Methodoverloading](
