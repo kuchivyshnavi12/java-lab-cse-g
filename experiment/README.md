@@ -67,3 +67,29 @@ class QuadraticEquationSolution {
 ```
 ##OUTPUT:
 ![output](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/ed71c6071b6ec94e320cc9d29dbe5e655e86c777/Screenshot%202025-12-30%20170135.png)
+## title : rectangke
+```
+  class Rectangle {
+        double length;
+        double breadth;
+ double area() {
+        return length * breadth;
+        }
+ double perimeter() {
+        return 2*(length + breadth);
+        }
+ }
+  class main {
+     public static void main(String args[]) {
+      Rectangle rect = new Rectangle();
+      rect.length = 12;
+      rect.breadth = 20;
+      double area = rect.area();
+      double perimeter = rect.perimeter();
+  System.out.println("Area of given Rectangle:"+area);
+  System.out.println("perimeter of given rectangle:"+perimeter);
+}
+}
+```
+## output:
+![output for rectangle](
