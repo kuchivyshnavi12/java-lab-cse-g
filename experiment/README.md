@@ -116,4 +116,29 @@ class QuadraticEquationSolution {
 }
 ```
 ## output:
-![output for Methodoverloading](
+![output for Methodoverloading](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/53da6b241f6f15357bd3d3e0ab87fc439b10f6ae/2b.output.png)
+## title 2c) construtor
+```
+  class student {
+     String Sname;
+     int Sage;
+     double Smarks;
+     student(String name,int age,double marks) {
+     Sname = name;
+     Sage = age;
+     Smarks = marks;
+     }
+     void display() {
+     System.out.println("student name:"+Sname);
+     System.out.println("student age:" +Sage);
+     System.out.println("student marks:" +Smarks);
+     }
+}
+  class main {
+     public static void main(String args[]) {
+      student S = new student("yagna:",19,600);
+      S.display();
+}
+}
+
+```
