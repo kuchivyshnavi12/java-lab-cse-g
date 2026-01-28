@@ -142,3 +142,5 @@ class QuadraticEquationSolution {
 }
 
 ```
+## output:
+![output fot constructor](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/bc8977b9b3370d1ac3e63a741596ae2288e69135/2c.output.png)
