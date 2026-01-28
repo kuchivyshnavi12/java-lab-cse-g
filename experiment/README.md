@@ -92,4 +92,4 @@ class QuadraticEquationSolution {
 }
 ```
 ## output:
-![output for rectangle](
+![output for rectangle](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/a49ace221df2460a2b1eba765c178510b422f85f/2a.output.png)
