@@ -294,7 +294,47 @@ import java.util.Scanner;
 }
 ```
 ## output
-[outpur for bubblesort]
+[outpur for bubblesort](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/fcdf935eeece6ea3b3a8cc9a61fe7d000b22f3d7/vyshu3b.jpeg)
+## title 4a) person
+```
+  class Person {
+     String name;
+     int age;
 
+      Person(String name, int age) {
+          this.name = name;
+          this.age = age;
+     }
+     void displayPersonDetails() {
+         System.out.println("Name : "+name);
+         System.out.println("Age : "+age);
+     }
+  }
+  class Employee extends Person {
+     double annualSalary;
+     int yearofJoining;
+     String nationalInsuranceNumber;
+     Employee(String name, int age, double annualSalary,int yearofJoining, String nationalInsuranceNumber) {
+          super(name,age);
+          this.annualSalary = annualSalary;
+          this.yearofJoining = yearofJoining;
+          this.nationalInsuranceNumber = nationalInsuranceNumber;
+    }
+    void displayEmployeeDetails() {
+      displayPersonDetails();
+      System.out.println("Annual Salary : " +annualSalary);
+      System.out.println("Year of Joining :"+yearofJoining);
+      System.out.println("nationalInsuranceNumber : "+nationalInsuranceNumber);
+    }
+ }
+public class TestEmployee {
+   public static void main(String args[]) {
+       Employee emp1 = new Employee("yagna",20,1000000,2029,"NI80746828B");
+       emp1.displayEmployeeDetails();
+   }
+}
+```
+## output
+[output for person]
 
 
