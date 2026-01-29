@@ -174,7 +174,81 @@ class Student {
       }
 ```
 ## output:
-![output for constructor overloading]
+![output for constructor overloading](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/87e67743d0828851689d77910928f4b91f8105ff/3a.output.png)
+## title 3b) Binarysearch
+```
+import java.util.Scanner;
+
+class Binarysearch {
+    int list[];
+    int size;
+
+    Binarysearch(int size) {
+        this.size = size;
+        list = new int[size];
+    }
+
+    void setlist() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the list items in Ascending order:");
+        
+        for (int i = 0; i < size; i++) {
+            System.out.println("Enter value " + (i + 1) + ": ");
+            list[i] = sc.nextInt();
+        }
+    }
+
+    void getlist() {
+        for (int i = 0; i < size; i++)
+            System.out.print(list[i] + ",");
+        System.out.println("\b\b.");
+    }
+
+    int Binarysearch(int key) {
+        int low = 0;
+        int high = list.length - 1;
+
+        while (low <= high) {
+            int mid = (low + high) / 2;
+
+            if (list[mid] == key)
+                return mid;
+
+            else if (list[mid] < key)
+                low = mid + 1;
+
+            else
+                high = mid - 1;
+        }
+
+        return -1; 
+    }
+}
+import java.util.Scanner;
+
+class main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        Binarysearch bs = new Binarysearch(10);
+
+        bs.setlist();
+        bs.getlist();
+
+        System.out.println("Enter the key to search: ");
+        int key = sc.nextInt();
+
+        int index = bs.Binarysearch(key);
+
+        if (index == -1)
+            System.out.println("Key item does NOT exist.");
+        else
+            System.out.println("Key item exists at index: " + index);
+    }
+}
+```
+## output
+![output for Binarysearch]
 
 
 
