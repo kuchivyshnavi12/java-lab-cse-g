@@ -248,8 +248,53 @@ class main {
 }
 ```
 ## output
-![output for Binarysearch]
+![output for Binarysearch](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/0707d3510bbdd6174ae5fbc88f6e1808bb1bf3e5/vyshu3c.jpeg)
+## title 3c) bubblesort
+```
+import java.util.Scanner;
 
+class BubbleSort {
+    void bubbleSort(int arr[]) {
+        int n = arr.length;
+        for (int i = 0; i < n - 1; i++) {
+            for (int j = 0; j < n - i - 1; j++) {
+                if (arr[j] > arr[j + 1]) {
+                    int temp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = temp;
+                }
+            }
+        }
+    }
+}
+import java.util.Scanner;
+ class Main {
+    public static void main(String args[]) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter the size of the array: ");
+        int size = sc.nextInt();
+
+        int arr[] = new int[size];
+
+        for (int i = 0; i < size; i++) {
+            System.out.print("Enter element " + (i + 1) + ": ");
+            arr[i] = sc.nextInt();
+        }
+
+        BubbleSort bs = new BubbleSort();
+        bs.bubbleSort(arr);
+
+        System.out.print("Sorted array: ");
+        for (int i = 0; i < size; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
+}
+```
+## output
+[outpur for bubblesort]
 
 
 
