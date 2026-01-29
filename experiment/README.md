@@ -144,3 +144,38 @@ class QuadraticEquationSolution {
 ```
 ## output:
 ![output fot constructor](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/bc8977b9b3370d1ac3e63a741596ae2288e69135/2c.output.png)
+## title 3a) constructor overloading
+```
+class Student {
+        String name;
+        int age;
+        double marks;
+        Student() {
+        }
+        Student(String name,int age,double marks) {
+                this.name = name;
+                this.age = age;
+                this.marks = marks;
+                }
+                void display() {
+                System.out.println("name:" +name);
+                System.out.println("age:" +age);
+                System.out.println("marks:" +marks);
+                }
+             }
+
+ class main {
+     public static void main(String args[]) {
+            Student std = new Student();
+             std.display();
+            Student std1 = new Student("yagna", 12,400);
+             std1.display();
+       }
+      }
+```
+## output:
+![output for constructor overloading]
+
+
+
+
