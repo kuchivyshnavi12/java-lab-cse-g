@@ -374,6 +374,50 @@ public class TestEmployee {
  }
 ```
 ## output
-[output for multilevel inheritance]()
+[output for multilevel inheritance](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/ca1ec324475f34c301e9e7868fee4875ee88fb87/4b.output.png)
+## 4c) dimensions in different shapes
+```
+  abstract class Figure {
+      double dim1;
+      double dim2;
+      Figure(double dim1,double dim2) {
+      this.dim1 = dim1;
+      this.dim2 = dim2;
+      }
+ abstract double area();
+ }
+  class Rectangle extends Figure {
+    Rectangle(double length,double breadth) {
+             super(length,breadth);
+   }
+   double area() {
+   double result = dim1*dim2;
+   return result;
+   }
+}
+  class Triangle extends Figure {
+      Triangle(double base,double height) {
+              super(base,height);
+      }
+     double area() {
+            double result = 0.5*dim1*dim2;
+            return result;
+     }
+}
+  class TestFigure {
+       public static void main(String args[]) {
+
+       Figure f1 = new Rectangle(99.9,66.6);
+       Figure f2 = new Triangle(88.8,55.5);
+
+
+       System.out.println("Area of Rectangle = " +f1.area());
+       System.out.println("Area of Triangle = " +f2.area());
+       }
+}
+```
+## output
+[output for dimensions in different shapes]()
+
 
 
