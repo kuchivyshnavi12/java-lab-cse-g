@@ -417,7 +417,8 @@ public class TestEmployee {
 }
 ```
 ## output
-[output for dimensions in different shapes]()
+[output for dimensions in different shapes](https://github.com/kuchivyshnavi12/java-lab-cse-g/blob/1e4df4500e464935a2eb718ecf5ffc318a4a077a/4c.outputt.png)
+
 
 
 
